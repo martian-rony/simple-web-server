@@ -8,30 +8,6 @@ This project demonstrates how to run a basic Python web server locally and expos
 * Ngrok installed and configured
 * Terminal or Command Prompt access
 
-## Project Structure
-
-```text
-.
-├── server.py
-└── README.md
-```
-
-## Create the Web Server
-
-Create a file named `server.py`:
-
-```python
-from http.server import HTTPServer, SimpleHTTPRequestHandler
-
-HOST = "0.0.0.0"
-PORT = 8000
-
-server = HTTPServer((HOST, PORT), SimpleHTTPRequestHandler)
-
-print(f"Server running at http://localhost:{PORT}")
-server.serve_forever()
-```
-
 ## Run the Server Locally
 
 Start the server:
